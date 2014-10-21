@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe package('sshd'), :if => os[:family] == 'redhat' do
+describe package('openssh'), :if => os[:family] == 'redhat' do
   it { should be_installed }
 end
 

@@ -1,0 +1,9 @@
+/cookbooks/
+.kitchen/
+.kitchen.local.yml
+
+/vendor/bundle/
+/berks-cookbooks/
+
+.DS_Store
+.vagrant/

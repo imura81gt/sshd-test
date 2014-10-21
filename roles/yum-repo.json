@@ -1,0 +1,15 @@
+{
+    "name": "yum-repo",
+    "json_class": "Chef::Role",
+    "description": "yum-repo default cookbooks",
+    "default_attributes": {
+    },
+    "run_list": [
+        "recipe[yum-ius]",
+        "recipe[yum-epel]",
+        "recipe[yum-repoforge]",
+        "recipe[yum-centos]"
+    ],
+    "chef_type": "role" 
+}
+

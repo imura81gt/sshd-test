@@ -1,0 +1,20 @@
+DEPENDENCIES
+  sshd (~> 1.1.0)
+  yum-centos (~> 0.3.0)
+  yum-epel (~> 0.5.1)
+  yum-ius (~> 0.3.0)
+  yum-repoforge (~> 0.4.0)
+
+GRAPH
+  sshd (1.1.1)
+  yum (3.3.2)
+  yum-centos (0.3.0)
+    yum (~> 3.0)
+  yum-epel (0.5.1)
+    yum (~> 3.0)
+  yum-ius (0.3.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  yum-repoforge (0.4.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)

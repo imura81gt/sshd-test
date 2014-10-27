@@ -1,7 +1,7 @@
 {
     "name": "sshd_config",
     "json_class": "Chef::Role",
-    "description": "sshd_config default cookbooks",
+    "description": "sshd_config role for openssh 5.3",
     "default_attributes": {
       "sshd": {
         "sshd_config": {

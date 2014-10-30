@@ -11,14 +11,20 @@ platforms:
       box: chef/centos-6.5
     run_list:
       - role[openssh_53]
+    driver:
+      network:
+        - ["private_network", {ip: "192.168.88.10"}]
   - name: CentOS-70
     driver_config:
       box: chef/centos-7.0
     run_list:
       - role[openssh_62]
-
+    driver:
+      network:
+        - ["private_network", {ip: "192.168.88.11"}]
 suites:
   - name: sshd
-    driver_config:
-      network:
-        - ["private_network", {ip: "192.168.88.10"}]
+#    driver_config:
+#      network:
+#        - ["private_network", {ip: "192.168.88.11"}]
+

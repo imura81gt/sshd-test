@@ -26,6 +26,7 @@
         "HostKey": [],
         "Subsystem": "sftp  /usr/libexec/openssh/sftp-server",
         "GSSAPICleanupCredentials": "yes",
+        "GSSAPIAuthentication": "no",
         "Match": {
           "Address 10.2.0.0/16": {
             "PasswordAuthentication": "yes" 

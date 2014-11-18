@@ -28,7 +28,7 @@ describe file('/etc/ssh/sshd_config'),:if => os[:family] == 'redhat' do
   it { should contain 'Subsystem sftp  /usr/libexec/openssh/sftp-server' }
   it { should contain 'AuthorizedKeysFile .ssh/authorized_keys' }
   it { should contain 'ChallengeResponseAuthentication no' }
-  it { should contain 'GSSAPIAuthentication yes' }
+  it { should contain 'GSSAPIAuthentication no' }
   it { should contain 'GSSAPICleanupCredentials yes' }
   it { should contain 'UsePAM yes' }
 
